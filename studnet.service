@@ -1,0 +1,13 @@
+#this file belongs to /etc/systemd/system/ and should be called studnet.service
+
+[Unit]
+Description=Studnet Login Script
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/studnet
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
