@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export SSHPASS=PASSWORT
+sshpass -e ssh -t -t -o StrictHostKeyChecking=yes MIETERNUMMER@139.18.143.253
